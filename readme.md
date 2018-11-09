@@ -13,6 +13,10 @@ name  | description
 ------------  | ----------
 `station_config` | Contains station info, such as id, latitude and longitude
 `data` | List of temperature values with timestamps
+#### Output
+`True` if air temperature value passed through zero value
+
+otherwise `False`
 #### Example
 ```
  {
@@ -37,7 +41,6 @@ name  | description
     }
 }
 ```
-
 ## Docker
 Service work on 5000 port. Run command in root directory:
 ```
