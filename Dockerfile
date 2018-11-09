@@ -1,7 +1,8 @@
 FROM python:3.6
 
-ADD . /project
+COPY . /app/
+WORKDIR /app/app
 
-RUN chmod a+x /project/app/run.sh
-EXPOSE 8000
-CMD ["/project/app/run.sh"]
+RUN pip install -r req.txt
+EXPOSE 5000
+RUN python manage.py run
