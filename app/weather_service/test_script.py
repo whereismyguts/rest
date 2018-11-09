@@ -38,7 +38,7 @@ def poll(req):
 
 
 p = multiprocessing.Pool()
-results = p.map(lambda r: poll(r), [data]*2)
+results = p.map(lambda r: poll(r), [data]*3000)
 
 p.close()
 p.join()
