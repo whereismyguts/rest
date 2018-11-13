@@ -46,3 +46,5 @@ Service work on 5000 port. Run command in root directory:
 ```
 docker-compose up --build
 ```
+## Achitecture
+<img src="./Wheather service scheme.svg">
